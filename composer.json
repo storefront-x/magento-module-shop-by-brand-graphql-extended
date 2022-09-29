@@ -1,0 +1,26 @@
+{
+    "name": "storefront-x/magento-module-shop-by-brand-graphql-extended",
+    "description": "Magento 2 module - ShopByBrand GraphQL extension for Amasty, provides new endpoints for module such as get brand by id",
+    "type": "magento2-module",
+    "homepage": "https://github.com/storefront-x/magento-module-shop-by-brand-graphql-extended",
+    "config": {
+        "sort-packages": true
+    },
+    "require": {
+        "php": ">=7.1",
+        "magento/framework": "^103.0.2",
+        "amasty/shopby-graphql": "^1.0.0",
+        "amasty/module-shop-by-brand-graphql": "^1.0.3"
+    },
+    "license": [
+        "MIT"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "StorefrontX\\ShopByBrandGraphQlExtended\\": ""
+        }
+    }
+}

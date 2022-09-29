@@ -1,0 +1,9 @@
+enum UrlRewriteEntityTypeEnum {
+    AMASTY_BRAND
+}
+
+type Query {
+    amBrandById (
+        brandId: Int @doc(description: "Brand ID")
+    ): Brand @resolver(class: "StorefrontX\\ShopByBrandGraphQlExtended\\Model\\Resolver\\GetAmBrandById")
+}
